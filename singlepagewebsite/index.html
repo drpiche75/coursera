@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daniel Piche - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Daniel Piche
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          drpiche75@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1(902)209-8807
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recomendations">Recomendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images/me.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Daniel Piche! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a front end web developer with 2 years of experience in both application and presentation layers.
+            I have worked on applications such as Peoplesoft. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/ps.png"/>
+          <h6>Peoplesoft</h6>
+          <p>6 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/python.png"/>
+          <h6>Python</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images/shell.png"/>
+          <h6>Shell Scripting</h6>
+          <p>4 years experience</p>
+        </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Battleship Game</h3>
+            <ul>
+              <li>Developed a battleship game in the Java programming language which made use of an algorithm to position the ships</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>MSFT Monitoring script</h3>
+            <ul>
+              <li>Wrote a script that would gather information about some back end services and produce a report outlining all the metrics related to that service</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <ul>
+              <li>Developed a website that would showcase all the work and projects I completed in college</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel is a very hard worker that can prioritize work under pressure and meet tight deadlines. 
+          He is very literate and is very good at negotiating deals with clients. He is also very well organized and is highly recommended employee.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel worked with me for 5 years and those 5 years were the most productive in my carrer. Daniel is a great team player with a positive attitude.
+          When he worked with me he would always come up with brilliant ideas and can think outside the box. He is the only employee that made it to Architcture lead in 3 years.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Daniel designed some of the greatest web based applications I have ever seen. He has a good eye for user interface design and understands all concepts of design very well.
+          I highly recomend him and he is going to be very missed in his past role. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recomendation</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
